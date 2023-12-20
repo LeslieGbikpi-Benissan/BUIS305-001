@@ -27,17 +27,13 @@ class ChoresToDoList:
             for task in self.tasks:
                 status = 'Completed' if task.completed else 'Not Completed'
                 print(f'{task.description} - {status}')
-
-# Creating a to-do list for chores
+                
 chores_list = ChoresToDoList()
-
-# Adding chores to the list
 chores_list.add_task(ToDoTask('Do BUIS 305 Homework'))
 chores_list.add_task(ToDoTask('Post Lab Reflections to Slack'))
 chores_list.add_task(ToDoTask('Complete all Labs Before 15 December 23'))
 chores_list.add_task(ToDoTask('Ace the Presentation for This Project in Class!'))
 
-# Example usage
 while True:
     print("\nOptions:")
     print("1. Display Chores")
